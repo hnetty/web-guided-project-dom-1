@@ -24,6 +24,15 @@ firstTitle.textContent = 'The New Title' // setting new text content for this el
 //  - Its parentElement
 //  - Its firstElementChild
 //  - Its firstElementChild's nextSibling element
+const theBody = document.body
+const theParentOfBody = theBody.parentElement
+console.log('the parent of body', theParentOfBody)
+
+const theFirstChildOfBody = theBody.firstElementChild
+console.log('the first child', theFirstChildOfBody)
+
+const theSiblingOfFirstChildOfBody = theFirstChildOfBody.nextElementSibling
+console.log('the sibling', theSiblingOfFirstChildOfBody)
 
 // STEP 4- find the Lambda Cat heading with firstElementChild and nextSibling
 
