@@ -116,6 +116,12 @@ const cardTitles = {
   cardTitle3: 'Give Me All the Belly Rubs',
   cardTitle4: 'I Haz CheeseBurger',
 }
+const theTitlesArray = Object.values(cardTitles)
+const allH2s = document.querySelectorAll('.card h2')
+
+for (let i = 0; i < allH2s.length; i++) {
+  allH2s[i].textContent = theTitlesArray[i]
+}
 
 // STEP 12- create a new link and append it to the main nav
 const newLinkProps = {
