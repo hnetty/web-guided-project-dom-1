@@ -78,6 +78,14 @@ const linksfromNav = nav.querySelectorAll('a') // [COLLECTION]
 const secondCardImage = document.querySelector('.card:nth-of-type(2) img')
 console.log(secondCardImage)
 
+// secondCardImage.src = 'url'
+secondCardImage.setAttribute('src', 'https://www.humanesociety.org/sites/default/files/styles/1441x612/public/2018/08/kitten-440379.jpg')
+
+const secondImageAlternate = document.querySelectorAll('.card img')[1]
+console.log(secondImageAlternate)
+
+
+
 // STEP 9- use style to change inline styles of an element
 //  - make the first h3 subheading be a different color
 //  - make all the h3 subheadings be a different color using a loop
