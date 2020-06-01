@@ -34,6 +34,14 @@ console.log('the first child', theFirstChildOfBody)
 const theSiblingOfFirstChildOfBody = theFirstChildOfBody.nextElementSibling
 console.log('the sibling', theSiblingOfFirstChildOfBody)
 
+const theNav = document.querySelector('nav')
+console.log('the nav', theNav)
+const childrenOfNav = theNav.children
+console.log('childrenOfNav', childrenOfNav)
+
+const firstLink = childrenOfNav[0]
+console.log(firstLink, 'firsLink')
+
 // STEP 4- find the Lambda Cat heading with firstElementChild and nextSibling
 
 // STEP 5- find the children of the nav, convert it into a real array
