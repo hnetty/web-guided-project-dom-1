@@ -41,6 +41,13 @@ console.log('childrenOfNav', childrenOfNav)
 
 const firstLink = childrenOfNav[0]
 console.log(firstLink, 'firsLink')
+firstLink.href = 'https://google.com'
+firstLink.textContent = 'THE NICE HOME LINK'
+
+const allNodesInsideNav = theNav.childNodes
+console.log('allNodesInsideNav', allNodesInsideNav)
+
+
 
 // STEP 4- find the Lambda Cat heading with firstElementChild and nextSibling
 
