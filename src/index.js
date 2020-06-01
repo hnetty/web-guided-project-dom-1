@@ -123,3 +123,10 @@ const newLinkProps = {
   textContent: 'Site Map',
   className: 'menu-item',
 }
+const newlink = document.createElement('a')
+
+newlink.href = newLinkProps.href
+newlink.textContent = newLinkProps.textContent
+newlink.classList.add(newLinkProps.className)
+
+nav.appendChild(newlink)
