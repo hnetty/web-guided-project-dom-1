@@ -81,10 +81,11 @@ console.log(secondCardImage)
 // secondCardImage.src = 'url'
 secondCardImage.setAttribute('src', 'https://www.humanesociety.org/sites/default/files/styles/1441x612/public/2018/08/kitten-440379.jpg')
 
-const secondImageAlternate = document.querySelectorAll('.card img')[1]
-console.log(secondImageAlternate)
+// const secondImageAlternate = document.querySelectorAll('.card img')[1]
+// console.log(secondImageAlternate)
 
-
+const secondCard = document.querySelector('.card:nth-of-type(2)')
+secondCard.querySelector('img')
 
 // STEP 9- use style to change inline styles of an element
 //  - make the first h3 subheading be a different color
