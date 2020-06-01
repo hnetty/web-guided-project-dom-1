@@ -89,11 +89,24 @@ secondCard.querySelector('img')
 
 // STEP 9- use style to change inline styles of an element
 //  - make the first h3 subheading be a different color
+const firstH3 = document.querySelector('h3')
+firstH3.style.color = 'red'
 //  - make all the h3 subheadings be a different color using a loop
+const allH3s = document.querySelectorAll('h3')
+
+// no map on NodeLists nor HTMLCollection
+allH3s.forEach(heading => {
+  heading.style.color = 'green'
+})
+
+const allH3sToArray = Array.from(allH3s)
 
 // STEP 10- use classList to add, remove and toggle a class name
 //  - remove the 'extra-stuff' class name from the last paragraph
+const paragraphLastCard = document.querySelector('.card:nth-of-type(4) p')
+paragraphLastCard.classList.remove('extra-stuff')
 //  - add it to the first paragraph
+document.querySelector('.card:nth-of-type(1) p').classList.add('extra-stuff')
 //  - toggle it in the second paragraph
 
 // STEP 11- get a collection of h2s and loop over them setting text content from cardTitles
