@@ -10,7 +10,11 @@ console.log('The project is UP')
 //  - the text content using .textContent
 //  - any attribute using .getAttribute('id') // example using id
 const firstTitle = document.querySelector('h2')
+console.log(firstTitle.id) // to find out the id
 firstTitle.id = 'theId' // setting an id
+
+console.log(firstTitle.className) // to read all class names as a single string
+console.log(firstTitle.classList) // to obtain a list of strings
 firstTitle.className = 'card-title alert' // sets all the class names
 firstTitle.classList // lists all the class names
 firstTitle.getAttribute('class') // lists all the class names
