@@ -52,11 +52,18 @@ console.log('allNodesInsideNav', allNodesInsideNav)
 
 // STEP 6- NO CSS SELECTOR - find the following elements or groups of elements:
 //  - all the divs in the page
+const allDivs = document.getElementsByTagName('div')
+console.log(allDivs)
+
 //  - all elements with a className of 'card'
 //  - the element with an id of 'mainNav'
 const allLinks = document.getElementsByTagName('a') // [COLLECTION]
 const allCards = document.getElementsByClassName('card') // [COLLECTION]
 const logoTitleOld = document.getElementById('logo-title') // [SINGLE ELEMENT]
+
+const h1 = document.getElementById('logoTitle')
+console.log('heading', h1)
+h1.textContent = 'Dogs'
 
 // STEP 7- do the same, but using CSS selectors
 const logoTitle = document.querySelector('#logo-title') // [SINGLE ELEMENT]
