@@ -9,11 +9,12 @@ console.log('The project is UP')
 //  - the data inside a data-attribute using .dataset
 //  - the text content using .textContent
 //  - any attribute using .getAttribute('id') // example using id
-const firstTitle = document.querySelector('h2:nth-of-type(2)')
+const firstTitle = document.querySelector('h2')
 firstTitle.id = 'theId' // setting an id
 firstTitle.className = 'card-title alert' // sets all the class names
 firstTitle.classList // lists all the class names
 firstTitle.getAttribute('class') // lists all the class names
+firstTitle.textContent = 'The New Title' // setting new text content for this element
 
 // STEP 3- find the body of the document in the DOM and find:
 //  - Its parentElement
