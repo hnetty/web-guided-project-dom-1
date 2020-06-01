@@ -34,6 +34,9 @@ console.log('the first child', theFirstChildOfBody)
 const theSiblingOfFirstChildOfBody = theFirstChildOfBody.nextElementSibling
 console.log('the sibling', theSiblingOfFirstChildOfBody)
 
+// STEP 4- find the Lambda Cat heading with firstElementChild and nextSibling
+
+// STEP 5- find the children of the nav, convert it into a real array
 const theNav = document.querySelector('nav')
 console.log('the nav', theNav)
 const childrenOfNav = theNav.children
@@ -46,12 +49,6 @@ firstLink.textContent = 'THE NICE HOME LINK'
 
 const allNodesInsideNav = theNav.childNodes
 console.log('allNodesInsideNav', allNodesInsideNav)
-
-
-
-// STEP 4- find the Lambda Cat heading with firstElementChild and nextSibling
-
-// STEP 5- find the children of the nav, convert it into a real array
 
 // STEP 6- NO CSS SELECTOR - find the following elements or groups of elements:
 //  - all the divs in the page
